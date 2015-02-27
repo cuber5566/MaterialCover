@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/grid_item_width"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:foreground="@drawable/default_selector">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/gery_dark"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/thumb_image_view"
+                android:layout_width="@dimen/grid_item_width"
+                android:layout_height="@dimen/grid_item_width"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kodaline" />
+
+            <RelativeLayout
+                android:id="@+id/thumb_bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/grid_item_footer_two_line_height"
+                android:gravity="center_vertical"
+                android:animateLayoutChanges="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/thumb_button_heart"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id="@+id/thumb_text_line1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/grid_item_text_padding"
+                        android:paddingRight="@dimen/grid_item_text_padding"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/gery_light"
+                        android:textSize="@dimen/grid_item_text_line1_size"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="In a Perfect World" />
+
+                    <TextView
+                        android:id="@+id/thumb_text_line2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/grid_item_text_padding"
+                        android:paddingRight="@dimen/grid_item_text_padding"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/gery_light"
+                        android:textSize="@dimen/grid_item_text_line2_size"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="Kodaline" />
+                </LinearLayout>
+
+
+                <ImageButton
+                    android:id="@+id/thumb_button_heart"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:padding="@dimen/icon_small_padding"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_star_outline"
+                    android:background="@drawable/default_selector" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

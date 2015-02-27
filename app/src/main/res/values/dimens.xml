@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- ActionBar-->
+    <dimen name="action_bar_height">56dp</dimen>
+    <dimen name="action_bar_padding">8dp</dimen>
+
+    <!-- icon -->
+    <dimen name="icon_size">48dp</dimen>
+    <dimen name="icon_small_padding">12dp</dimen>
+    <dimen name="icon_medium_padding">8dp</dimen>
+    <dimen name="icon_large_padding">2dp</dimen>
+
+    <!-- Tab -->
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="tab_view_text_width_portrait">0dp</dimen>
+    <dimen name="tab_view_text_width_landscape">96dp</dimen>
+    <dimen name="tab_view_text_height">48dp</dimen>
+
+    <!-- Grid Item -->
+    <dimen name="grid_item_footer_single_line_height">48dp</dimen>
+    <dimen name="grid_item_footer_two_line_height">68dp</dimen>
+    <dimen name="grid_item_text_line1_size">16sp</dimen>
+    <dimen name="grid_item_text_line2_size">14sp</dimen>
+    <dimen name="grid_item_text_padding">16dp</dimen>
+
+
+    <dimen name="grid_item_height">250dp</dimen>
+    <dimen name="grid_item_width">250dp</dimen>
+</resources>
